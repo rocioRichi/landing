@@ -1,17 +1,18 @@
 import { useEffect } from "react";
+import { useRef } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
+  const cornerRef = useRef(null);
+
   useEffect(() => {
-    // Carga el recorte dinámicamente desde el HTML externo
     fetch("/components/pinkdev-corner.html")
       .then((res) => res.text())
       .then((html) => {
-        const container = document.getElementById("pinkdev-corner");
-        if (container) {
-          container.innerHTML = html;
+        if (cornerRef.current) {
+          cornerRef.current.innerHTML = html;
         }
       });
   }, []);
