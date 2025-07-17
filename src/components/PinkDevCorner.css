@@ -1,0 +1,14 @@
+.pinkdev-corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.pinkdev-corner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

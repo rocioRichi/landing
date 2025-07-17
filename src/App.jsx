@@ -1,25 +1,12 @@
-import { useEffect, useRef } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import PinkDevCorner from "./components/PinkDevCorner";
 
 function App() {
-  const cornerRef = useRef(null);
-
-  useEffect(() => {
-    fetch("/components/pinkdev-corner.html")
-      .then((res) => res.text())
-      .then((html) => {
-        if (cornerRef.current) {
-          cornerRef.current.innerHTML = html;
-        }
-      });
-  }, []);
-
   return (
     <>
-      {/* ✅ Aquí ya le pasas el ref correctamente */}
-      <div id="pinkdev-corner" ref={cornerRef}></div>
+      <PinkDevCorner />
 
       <img src="tpdlanding.png" className="logo react" alt="logo" />
 
