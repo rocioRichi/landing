@@ -43,3 +43,20 @@
 h3 {
   color: rgb(35, 101, 224);
 }
+.pinkdev-corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px; /* Ajusta según el tamaño real del PNG */
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.pinkdev-corner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+body {
+  background-color: #76fafe;
+}
