@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
@@ -19,8 +18,8 @@ function App() {
 
   return (
     <>
-      {/* Aquí se insertará el recorte */}
-      <div id="pinkdev-corner"></div>
+      {/* ✅ Aquí ya le pasas el ref correctamente */}
+      <div id="pinkdev-corner" ref={cornerRef}></div>
 
       <img src="tpdlanding.png" className="logo react" alt="logo" />
 

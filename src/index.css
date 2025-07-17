@@ -74,7 +74,6 @@ button:focus-visible {
   z-index: 9999;
   pointer-events: none;
 }
-
 .pinkdev-corner img {
   width: 100%;
   height: auto;
