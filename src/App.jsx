@@ -5,12 +5,14 @@ import "./App.css";
 
 function App() {
   useEffect(() => {
+    // Carga el recorte dinámicamente desde el HTML externo
     fetch("/components/pinkdev-corner.html")
       .then((res) => res.text())
       .then((html) => {
-        const container = document.createElement("div");
-        container.innerHTML = html;
-        document.body.appendChild(container);
+        const container = document.getElementById("pinkdev-corner");
+        if (container) {
+          container.innerHTML = html;
+        }
       });
   }, []);
 
