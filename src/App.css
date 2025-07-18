@@ -63,3 +63,15 @@ body {
   min-height: 100vh; /* para que ocupe toda la altura */
   margin: 0;
 }
+.tech-band {
+  display: flex;
+  flex-wrap: wrap; /* o quítalo si no quieres que salte a dos filas */
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.tech-logo {
+  height: 50px; /* ajusta a tu gusto */
+  object-fit: contain;
+}

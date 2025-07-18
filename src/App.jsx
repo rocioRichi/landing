@@ -1,23 +1,46 @@
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import PinkDevCorner from "./components/PinkDevCorner";
 import ProjectsList from "./components/ProjectList";
+const logoNames = [
+  "reactcolor",
+  "vitecolor",
+  "laravelcolor",
+  "phpcolor",
+  "githubcolor",
+  "babelcolor",
+  "bootstrapcolor",
+  "csscolor",
+  "dockercolor",
+  "gitcolor",
+  "githubcolor",
+  "gitlabcolor",
+  "htmlcolor",
+  "jscolor",
+  "mongocolor",
+  "mysqlcolor",
+];
+
+function TechBand() {
+  return (
+    <div className="tech-band">
+      {logoNames.map((name, index) => (
+        <img
+          key={index}
+          src={`/public/icons/color/${name}.png`}
+          alt={`${name} logo`}
+          className="tech-logo"
+        />
+      ))}
+    </div>
+  );
+}
 
 function App() {
   return (
     <>
       <PinkDevCorner />
+      <TechBand />
 
-      <div>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-        <a href="https://vite.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo react" alt="Vite logo" />
-        </a>
-        <img src="laravellogo.png" className="logo react" alt="Laravel logo" />
-      </div>
       <ProjectsList />
 
       <h3>Portfolio</h3>
