@@ -58,5 +58,8 @@ h3 {
   display: block;
 }
 body {
-  background-color: #76fafe;
+  /* El degradado va de azul a blanco en 0% a 33%, y blanco sólido del 33% al 100% */
+  background: linear-gradient(to bottom, #76fafe 0%, #76fafe 8%, #ffffff 20%);
+  min-height: 100vh; /* para que ocupe toda la altura */
+  margin: 0;
 }

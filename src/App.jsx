@@ -2,13 +2,12 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import PinkDevCorner from "./components/PinkDevCorner";
+import ProjectsList from "./components/ProjectList";
 
 function App() {
   return (
     <>
       <PinkDevCorner />
-
-      <img src="tpdlanding.png" className="logo react" alt="logo" />
 
       <div>
         <a href="https://react.dev" target="_blank" rel="noreferrer">
@@ -19,6 +18,7 @@ function App() {
         </a>
         <img src="laravellogo.png" className="logo react" alt="Laravel logo" />
       </div>
+      <ProjectsList />
 
       <h3>Portfolio</h3>
       <p className="read-the-docs">Coming Soon!</p>
