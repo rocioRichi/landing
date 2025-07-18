@@ -26,7 +26,7 @@ function TechBand() {
       {logoNames.map((name, index) => (
         <img
           key={index}
-          src={`/public/icons/color/${name}.png`}
+          src={`/icons/color/${name}.png`}
           alt={`${name} logo`}
           className="tech-logo"
         />
