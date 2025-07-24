@@ -13,13 +13,19 @@ function ProjectList() {
       name: "Landing",
       url: "https://thepinkdev.es",
       description: "Landing page con estilo moderno.",
-      tech: ["html5", "css", "jss"],
+      tech: ["typescript", "html5", "css", "react", "vite"],
     },
     {
-      name: "Mi Blog",
-      url: "#",
-      description: "Blog en desarrollo con Laravel.",
-      tech: ["php", "laravel", "docker", "sass"],
+      name: "Mi vida pasada",
+      url: "https://rocio1975.wordpress.com/2018/05/09/estructura/",
+      description: "Blog en desarrollo con Wordpress.",
+      tech: ["wordpress", "html5", "css"],
+    },
+    {
+      name: "Clientes",
+      url: "https://clientes.thepinkdev.es",
+      description: "Crud con Laravel-Blade, Node, npm, Certbot (Lets Encrypt)",
+      tech: ["laravel", "mysql", "html5", "css"],
     },
   ];
 
