@@ -6,7 +6,7 @@ const logoNames = [
   "vitecolor",
   "laravelcolor",
   "phpcolor",
-  "githubcolor",
+  "typescript",
   "babelcolor",
   "bootstrapcolor",
   "csscolor",
@@ -42,9 +42,6 @@ function App() {
       <TechBand />
 
       <ProjectsList />
-
-      <h3>Portfolio</h3>
-      <p className="read-the-docs">Coming Soon!</p>
     </>
   );
 }
