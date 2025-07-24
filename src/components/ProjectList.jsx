@@ -28,11 +28,11 @@ function ProjectList() {
       tech: ["laravel", "mysql", "html5", "css"],
     },
     {
-      name: "SpacePIc",
+      name: "SpacePic",
       url: "https://spacepic.onrender.com/?action=gallery",
       description:
         "Web con fotos del espacio. Conexión a la API de la NASA. Despliegue del back en render y front en Netlifly, just php",
-      tech: ["php", "html5", "css"],
+      tech: ["php", "html5", "css", "docker"],
     },
   ];
 
