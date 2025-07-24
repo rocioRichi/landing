@@ -12,13 +12,13 @@ function ProjectList() {
     {
       name: "Landing",
       url: "https://thepinkdev.es",
-      description: "Landing page con estilo moderno.",
+      description: "www.thepinkdev.es",
       tech: ["typescript", "html5", "css", "react", "vite"],
     },
     {
       name: "Mi vida pasada",
       url: "https://rocio1975.wordpress.com/2018/05/09/estructura/",
-      description: "Blog en desarrollo con Wordpress.",
+      description: "Blog de fotos de trabajos de carpintería.",
       tech: ["wordpress", "html5", "css"],
     },
     {
@@ -26,6 +26,13 @@ function ProjectList() {
       url: "https://clientes.thepinkdev.es",
       description: "Crud con Laravel-Blade, Node, npm, Certbot (Lets Encrypt)",
       tech: ["laravel", "mysql", "html5", "css"],
+    },
+    {
+      name: "SpacePIc",
+      url: "https://spacepic.onrender.com/?action=gallery",
+      description:
+        "Web con fotos del espacio. Conexión a la API de la NASA. Despliegue del back en render y front en Netlifly, just php",
+      tech: ["php", "html5", "css"],
     },
   ];
 
